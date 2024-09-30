@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Cores Primarias */
+    --Vermelho-cereja: #C21233;
+    --Branco: #fff;
+    --Red-off-white: #F1F5F2;
+    --Grafite: #25282A;
+    --Cinza-off-white: rgb(232, 232, 232);
+    --Azul-escuro: #14325A;
+    --Preto: #000000;
+    --Dourado: #C5A469;
+
+    /* Principais fontes */
+    --Poppins: 'Poppins', san-serif;
+    --Open-Sans: 'Open Sans', san-serif;
+}
+
+body {
+    font-family: var(--Open-Sans);
+    font-size: 1rem;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    /* border-bottom: 1px solid rgba(128, 128, 128, 0.107); */
+    box-shadow: .5px .5px 8px gray;
+}
+
+header .logo{
+    background-color: var(--Vermelho-cereja);
+    width: 300px;
+    text-align: center;
+    
+}
+
+nav#desktop{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding-inline: 20px;
+    margin-left: 150px;
+}
+
+header nav#desktop ul{
+    display: flex;
+    gap: 40px;
+    list-style-type: none;
+}
+
+/* header #sair-btn{
+    background-color: var(--Vermelho-cereja);
+} */
+
+header ul a{
+    color: var(--Preto);
+    font-size: 1.1em;
+    text-decoration: none;  
+}
+
+header #sair-btn a{
+    border: 2px solid black;
+    padding: 10px;
+    margin-right: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--Grafite);
+}
+
+header #sair-btn a:hover{
+    background-color: var(--Grafite);
+    color: var(--Branco);
+}
