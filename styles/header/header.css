@@ -25,30 +25,31 @@ body {
     font-size: 1rem;
 }
 
-header{
+header {
     display: flex;
     align-items: center;
     /* border-bottom: 1px solid rgba(128, 128, 128, 0.107); */
     box-shadow: .5px .5px 8px gray;
 }
 
-header .logo{
+header .logo {
     background-color: var(--Vermelho-cereja);
     width: 300px;
     text-align: center;
-    
+
 }
 
-nav#desktop{
+nav#desktop {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
     padding-inline: 20px;
     margin-left: 150px;
+
 }
 
-header nav#desktop ul{
+header nav#desktop ul {
     display: flex;
     gap: 40px;
     list-style-type: none;
@@ -58,13 +59,33 @@ header nav#desktop ul{
     background-color: var(--Vermelho-cereja);
 } */
 
-header ul a{
+header ul a {
     color: var(--Preto);
     font-size: 1.1em;
-    text-decoration: none;  
+    text-decoration: none;
+    position: relative;
 }
 
-header #sair-btn a{
+/* header ul a.active{
+    border-bottom: 3px solid var(--Dourado);
+} */
+
+header ul a::after {
+    content: " ";
+    width: 0%;
+    height: 2px;
+    background-color: var(--Dourado);
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    transition: .5s ease-in-out;
+}
+
+header ul a:hover::after {
+    width: 100%;
+}
+
+header #sair-btn a {
     border: 2px solid black;
     padding: 10px;
     margin-right: 20px;
@@ -73,7 +94,7 @@ header #sair-btn a{
     color: var(--Grafite);
 }
 
-header #sair-btn a:hover{
+header #sair-btn a:hover {
     background-color: var(--Grafite);
     color: var(--Branco);
 }
