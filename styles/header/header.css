@@ -30,6 +30,7 @@ header {
     align-items: center;
     /* border-bottom: 1px solid rgba(128, 128, 128, 0.107); */
     box-shadow: .5px .5px 8px gray;
+    position: relative;
 }
 
 header .logo {
@@ -45,13 +46,12 @@ nav#desktop {
     width: 100%;
     padding-inline: 20px;
     margin-left: 150px;
-
 }
 
 header nav#desktop ul {
     display: flex;
     gap: 40px;
-    list-style-type: none; 
+    list-style-type: none;
 }
 
 header ul a {
@@ -76,16 +76,91 @@ header ul a:hover::after {
     width: 100%;
 }
 
-header #sair-btn a {
-    border: 2px solid black;
-    padding: 10px;
+header #sair-btn {
     margin-right: 20px;
+    position: relative;
+}
+
+header #sair-btn a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid black;
+    padding: 10px;
+    box-shadow: inset 0 0 0 1px #000;
+    /* Borda interna */
+    border-radius: 3px;
     text-decoration: none;
-    text-transform: uppercase;
     color: var(--Grafite);
+    transition: .3s;
+    animation-name: trocarIcone;
+    font-family: 'Poppins', sans-serif;
 }
 
 header #sair-btn a:hover {
     background-color: var(--Grafite);
+    box-shadow: inset 0 0 0 2px #ffffff;
+    /* Borda interna */
     color: var(--Branco);
+}
+
+/* Menu Mobile */
+
+nav#mobile #mobile_menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .3s ease;
+    background-color: var(--Branco);
+    box-shadow: 5px 5px 10px rgba(255, 101, 101, 0.13);
+}
+
+nav#mobile #mobile_menu ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+}
+
+nav#mobile #mobile_menu ul li {
+    padding: 10px;
+    box-shadow: 0px 0px .5px black;
+}
+
+header #icone-abrir {
+    margin-right: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+@media screen and (max-width: 996px) {
+    nav#desktop {
+        margin-left: 50px;
+    }
+}
+
+@media screen and (max-width: 873px) {
+    nav#desktop {
+        display: none;
+    }
+
+    header #sair-btn {
+        display: none;
+    }
+
+    header {
+        justify-content: space-between;
+    }
+
+    header #icone-abrir{
+        display: block;
+    }
+
+    header .logo {
+        width: 200px;
+    }
 }
