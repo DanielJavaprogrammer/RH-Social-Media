@@ -13,6 +13,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="/styles/header/header.css">
     <title>Red House</title>
 </head>
@@ -26,11 +28,11 @@
         <nav id="desktop">
             <div id="desktop_menu">
                 <ul>
-                    <li><a href="#">Comunicados</a></li>
+                    <li><a href="/code/main.html">Comunicados</a></li>
 
                     <li><a href="#">Postagens</a></li>
 
-                    <li><a href="#">Beneficios</a></li>
+                    <li><a href="/code/beneficios.html">Beneficios</a></li>
 
                     <li><a href="#">Unidades</a></li>
                 </ul>
@@ -65,22 +67,104 @@
 
     <main>
         <div class="conteudo">
-            <div class="div1">
-                <div class="post">
-                    <div class="usuario">
-                        <div class="usuario-foto">
-                            <img src="/assets/fotos/avatar.png" alt="avatar">
+            <div id="publicacoes">
+                <div class="div1">
+                    <div class="post">
+                        <div class="usuario">
+                            <div class="usuario_dados">
+                                <div class="usuario-foto">
+                                    <img src="/assets/fotos/avatar.png" alt="avatar">
+                                </div>
+                                <div class="avatar-texto">
+                                    <p>Barbara Monteiro</p>
+                                    <span>People Design</span>
+                                </div>
+                            </div>
+                            <div class="usuario-data-postagem">
+                                <span>Há 2h</span>
+                            </div>
                         </div>
-
-                        <div class="avatar-texto">
-                            <p>Barbara Monteiro</p>
-                            <span>People Design</span>
+                        <div class="div1-postagem">
+                            <div class="postagem-text">
+                                <p>Momento Bem Estar</p>
+                                <p>Nos dias 14, 15 e 16 de outubro, das 8h até as 17h, teremos profissionais da Posher
+                                    presentes na escola para oferecer seções Shiatsu, ou reflexologia, técnicas
+                                    terapeutica.
+                                </p>
+                                <p>Aproveitem esse beneficio e agende agora mesmo!</p>
+                            </div>
+                            <div class="postagem-imagem">
+                                <div class="post-imagem">
+                                    <img src="/assets/fotos/imagem.jpeg" alt="imagem-promoção">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="post-curtidas">
+                            <input type="checkbox" id="check-like">
+                            <label for="check-like">
+                                <img src="/assets/icons/coracao.png" alt="icone coração" id="img1">
+                                <img src="/assets/icons/coracao (1).png" alt="icone coração likado" id="img2">
+                            </label>
+                            <span>Curtir</span>
                         </div>
                     </div>
                 </div>
+
+                <div class="div1">
+                    <div class="post">
+                        <div class="usuario">
+                            <div class="usuario_dados">
+                                <div class="usuario-foto">
+                                    <img src="/assets/fotos/avatar.png" alt="avatar">
+                                </div>
+                                <div class="avatar-texto">
+                                    <p>Barbara Monteiro</p>
+                                    <span>People Design</span>
+                                </div>
+                            </div>
+                            <div class="usuario-data-postagem">
+                                <span>Há 2h</span>
+                            </div>
+                        </div>
+                        <div class="div1-postagem">
+                            <div class="postagem-text">
+                                <p>Momento Saúde</p>
+                                <p>Aproveite esse momento para cuidar de sua saúde. Cuide do seu coração. Aproveite os
+                                    nossos beneficios como Conexa, e o Notredame
+                                </p>
+                                <p>Aproveitem esse beneficio e agende agora mesmo a sua consulta!</p>
+                            </div>
+                            <div class="postagem-imagem">
+                                <div class="post-imagem">
+                                    <img src="/assets/fotos/post2.png" alt="imagem-promoção">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="post-curtidas">
+                            <input type="checkbox" id="check-like">
+                            <label for="check-like">
+                                <img src="/assets/icons/coracao.png" alt="icone coração" id="img1">
+                                <img src="/assets/icons/coracao (1).png" alt="icone coração likado" id="img2">
+                            </label>
+                            <span>Curtir</span>
+                        </div>
+                    </div>
+                </div>
+
+
             </div>
 
-            <div class="div2">Divisão 2</div>
+            <div class="div2">
+                <div class="div2-texto">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quam consequatur libero
+                        adipisci voluptates tempora perferendis id, odit, iste excepturi et laborum? Totam illo
+                        accusantium nihil iusto omnis ex consectetur.</p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro, voluptates! Obcaecati laudantium,
+                    reiciendis mollitia sunt ad nulla voluptates ducimus maiores pariatur atque voluptatem vero fugit
+                    quasi delectus adipisci quibusdam ratione.
+                </div>
+            </div>
+
         </div>
     </main>
     <script src="/scripts/header.js"></script>

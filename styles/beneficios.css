@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Cores Primarias */
+    --Vermelho-cereja: #C21233;
+    --Branco: #fff;
+    --Red-off-white: #F1F5F2;
+    --Grafite: #25282A;
+    --Cinza-off-white: rgb(232, 232, 232);
+    --Azul-escuro: #14325A;
+    --Preto: #000000;
+    --Dourado: #C5A469;
+
+    /* Principais fontes */
+    --Poppins: 'Poppins', san-serif;
+    --Open-Sans: 'Open Sans', san-serif;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+
+}
+
+main {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    max-width: 70%;
+    margin: 20px auto;
+
+    background-color: var(--Branco);
+    padding: 10px;
+    border-radius: 10px;
+
+    height: auto;
+}
+
+main div.beneficio {
+    min-width: 350px;
+    height: 350px;
+    flex: 1 1;
+    text-align: center;
+    border: 1px solid rgb(222, 219, 219);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+main div.beneficio:hover {
+    box-shadow: rgba(50, 50, 93, 0.082) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.11) 0px 18px 36px -18px inset;
+}
+
+main div.caju {
+    background-image: url(/assets/fotos/caju.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+main div.conexa {
+    background-image: url(/assets/fotos/conexa.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+main div.gym-pass {
+    background-image: url(/assets/fotos/gympass.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+main div.convenio {
+    background-image: url(/assets/fotos/notredame.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 600px) {
+    main div.beneficio {
+        min-width: 200px;
+        height: 200px;
+    }
+}

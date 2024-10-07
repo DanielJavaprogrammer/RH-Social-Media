@@ -8,6 +8,4 @@ document.querySelector("#icone-abrir").addEventListener("click", function () {
         menu.style.opacity = "0";
         menu.style.pointerEvents = "none";
     }
-
 })
-

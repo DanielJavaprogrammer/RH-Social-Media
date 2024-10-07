@@ -22,7 +22,10 @@
 
 body {
     font-family: var(--Open-Sans);
+    background-color: var(--Red-off-white);
     font-size: 1rem;
+    width: 100%;
+    height: 100%;
 }
 
 header {
@@ -156,7 +159,7 @@ header #icone-abrir {
         justify-content: space-between;
     }
 
-    header #icone-abrir{
+    header #icone-abrir {
         display: block;
     }
 
@@ -171,48 +174,59 @@ header #icone-abrir {
     }
 }
 
-main{
-    width: 100%;
-    height: 100vh;
+main {
     background-color: var(--Red-off-white);
+    width: 100%;
+    height: 100%;
 }
 
-main .conteudo{
-    background-color: var(--Branco);
+main #publicacoes{
+    display: flex;
+    flex-direction: column;
+}
+
+main .conteudo {
     max-width: 80%;
     margin: 10px auto;
 
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-between;
 
     padding: 10px;
 }
 
-main .conteudo .div1{
-    /* background-color: blue; */
-    height: 100%;
-    flex-grow: 2;
+main  .div1 {
+    max-width: 80%;
+    min-width: 500px;
+    /* height: 100%; */
+    border-radius: 10px;
+    background-color: var(--Branco);
+    margin-bottom: 15px;
 }
 
-main .usuario{
+main .usuario {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+}
+
+main .usuario_dados {
+    display: flex;
     align-items: center;
-    font-family: var(--Poppins);
     line-height: 1;
 }
 
-main .usuario .avatar-texto{
+main .usuario .avatar-texto {
     margin-left: 20px;
 }
 
-main .usuario .avatar-texto span{
+main .usuario .avatar-texto span {
     color: var(--Azul-escuro);
     font-size: .7rem;
     font-weight: 500;
 }
 
-main .usuario-foto{
+main .usuario-foto {
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -220,16 +234,96 @@ main .usuario-foto{
     object-fit: cover;
 }
 
-main .usuario-foto img{
+main .usuario-data-postagem span {
+    color: var(--Azul-escuro);
+    font-size: .7rem;
+    font-weight: 500;
+}
+
+main .usuario-foto img {
     width: 100%;
     height: 100%;
 }
 
+main .div1-postagem {
+    margin-top: 10px;
+}
 
+main .postagem-text {
+    padding: 10px;
+}
 
+main .postagem-imagem {
+    /* background-color: white; */
+    height: 600px;
+    width: auto;
+    margin: 10px auto;
+    text-align: center;
+}
 
-main .conteudo .div2{
-    background-color: lightblue;
+main .post-imagem img {
+    height: 600px;
+    width: 100%;
+    padding-inline: 30px;
+}
+
+main .post {
+    /* background-color: lightblue; */
+    padding: 10px;
+    border-radius: 10px;
+}
+
+main .post-imagem:after {
+    content: " ";
+    width: 100%;
+    height: 1px;
+    background-color: rgba(190, 190, 190, 0.644);
+    display: block;
+    margin-top: 5px;
+}
+
+main .post-curtidas {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 20px;
+}
+
+main .post-curtidas img {
+    width: 25px;
+}
+
+main .post-curtidas #img2 {
+    position: absolute;
+    opacity: 0;
+}
+
+.post-curtidas label {
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+#check-like:checked+label #img2 {
+    opacity: 1;
+}
+
+#check-like:checked+label #img1 {
+    opacity: 0;
+}
+
+#check-like {
+    opacity: 0;
+}
+
+main .conteudo .div2 {
+    background-color: rgb(255, 255, 255);
     height: 100%;
-    flex-grow: 1;
+    width: 40%;
+    border-radius: 10px;
+}
+
+main .conteudo .div2 .div2-texto{
+    padding: 10px;
 }
