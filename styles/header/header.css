@@ -180,7 +180,7 @@ main {
     height: 100%;
 }
 
-main #publicacoes{
+main #publicacoes {
     display: flex;
     flex-direction: column;
 }
@@ -195,7 +195,7 @@ main .conteudo {
     padding: 10px;
 }
 
-main  .div1 {
+main .div1 {
     max-width: 80%;
     min-width: 500px;
     /* height: 100%; */
@@ -322,8 +322,9 @@ main .conteudo .div2 {
     height: 100%;
     width: 40%;
     border-radius: 10px;
+    display: none;
 }
 
-main .conteudo .div2 .div2-texto{
+main .conteudo .div2 .div2-texto {
     padding: 10px;
 }
