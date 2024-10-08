@@ -10,6 +10,6 @@ document.querySelector("#icone-abrir").addEventListener("click", function () {
     }
 })
 
-document.querySelector(".caju").addEventListener("click", function(){
-    location.href ="/code/beneficioCaju.html";
+document.querySelector(".caju").addEventListener("click", function () {
+    location.href = "../code/beneficioCaju.html";
 })

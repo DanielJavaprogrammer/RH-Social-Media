@@ -56,28 +56,28 @@ main div.beneficio:hover {
 }
 
 main div.caju {
-    background-image: url(/assets/fotos/caju.png);
+    background-image: url(../assets/fotos/caju.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 main div.conexa {
-    background-image: url(/assets/fotos/conexa.png);
+    background-image: url(../assets/fotos/conexa.png);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 main div.gym-pass {
-    background-image: url(/assets/fotos/gympass.jpg);
+    background-image: url(../assets/fotos/gympass.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 main div.convenio {
-    background-image: url(/assets/fotos/notredame.jpg);
+    background-image: url(../assets/fotos/notredame.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
