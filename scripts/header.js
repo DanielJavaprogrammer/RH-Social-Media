@@ -9,3 +9,7 @@ document.querySelector("#icone-abrir").addEventListener("click", function () {
         menu.style.pointerEvents = "none";
     }
 })
+
+document.querySelector(".caju").addEventListener("click", function(){
+    location.href ="/code/beneficioCaju.html";
+})
