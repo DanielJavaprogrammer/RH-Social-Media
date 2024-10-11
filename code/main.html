@@ -68,41 +68,90 @@
     </header>
 
     <main>
-        <article class="container">
+        <article class="container-feed">
             <div class="postagem">
                 <div class="postagem-usuario">
                     <div class="postagem-usuario-avatar">
                         <!--Imagem do usuario-->
-                        <img src="..." alt="Foto do usuário">
+                        <img src="../assets/fotos/avatar.png" alt="Foto do usuário">
                     </div>
 
                     <div class="postagem-usuario-dados">
                         <!--Nome e Cargo do Usuario e hora-->
-                        <p>...</p>
-                        <span>...</span>
-                        <span class="horaio">...</span>
+                        <p>Barbara Baborsa Monteiro</p>
+                        <span>People Design</span>
+                        <!-- Aqui abaixo sera realizado um script para adicionar o horario da postagem -->
+                        <span id="horaio" style="color: gray;">2h</span>
                     </div> 
                 </div> <!--Final da header postagem-usuario -->
 
                 <div class="postagem-conteudo">
 
                     <!--Texto da Postagem-->
-                    <div class="postagem-conteudo-texto"
-                        <p>...</p>
+                    <div class="postagem-conteudo-texto">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio harum beatae, repellendus, quo odit autem ipsam suscipit sequi esse aspernatur, eius reiciendis ex? Reprehenderit sequi a dignissimos nisi dolorum magnam.</p>
                     </div>
 
                     <div class="postagem-conteudo-imagem">
 
                         <!--Imagem da Postagem-->
-                        <img src="..." alt="Imagem da postagem">
+                        <img src="../assets/fotos/imagem.jpeg" alt="Imagem da postagem">
                     </div>
                 </div>
 
-                <div class="postagem-like">
+                <!--Botao de coração para curtir publicação-->
+                <button id="postagem-curtir" onclick="curtir()" aria-label="Curtir esta publicação">
+                    <div class="curtir-texto">
+                        <p>Curtir</p>
+                    </div>
+                    <div id="curtir-coracao">
+                        <img src="../assets/icons/heart.svg" alt="curtir">
+                    </div>
+                </button>
+            </div> <!--Final da div Postagem-->
+        </article>
 
-                    <!--Imagem de coração para curtir publicação-->
-                    <img src="..." alt="curtir publicação">
+        <article class="container-feed">
+            <div class="postagem">
+                <div class="postagem-usuario">
+                    <div class="postagem-usuario-avatar">
+                        <!--Imagem do usuario-->
+                        <img src="../assets/fotos/avatar.png" alt="Foto do usuário">
+                    </div>
+
+                    <div class="postagem-usuario-dados">
+                        <!--Nome e Cargo do Usuario e hora-->
+                        <p>Barbara Baborsa Monteiro</p>
+                        <span>People Design</span>
+                        <!-- Aqui abaixo sera realizado um script para adicionar o horario da postagem -->
+                        <span id="horaio" style="color: gray;">2h</span>
+                    </div> 
+                </div> <!--Final da header postagem-usuario -->
+
+                <div class="postagem-conteudo">
+
+                    <!--Texto da Postagem-->
+                    <div class="postagem-conteudo-texto">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio harum beatae, repellendus, quo odit autem ipsam suscipit sequi esse aspernatur, eius reiciendis ex? Reprehenderit sequi a dignissimos nisi dolorum magnam.</p>
+                    </div>
+
+                    <div class="postagem-conteudo-imagem">
+
+                        <!--Imagem da Postagem-->
+                        <img src="../assets/fotos/post2.png" alt="Imagem da postagem">
+                    </div>
                 </div>
+
+                <!--Botao de coração para curtir publicação-->
+                <button id="postagem-curtir" onclick="curtir()" aria-label="Curtir esta publicação">
+                    <div class="curtir-texto">
+                        <p>Curtir</p>
+                    </div>
+                    <div id="curtir-coracao">
+                        <img src="../assets/icons/heart.svg" alt="curtir">
+                    </div>
+                </button>
+
             </div> <!--Final da div Postagem-->
         </article>
     </main>
