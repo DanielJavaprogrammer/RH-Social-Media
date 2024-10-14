@@ -20,6 +20,10 @@
     --Open-Sans: 'Open Sans', san-serif;
 }
 
+body{
+    font-family: var(--Poppins);
+}
+
 main .conexa-home {
     width: 100%;
     background-color: #1B0C84;
@@ -27,7 +31,6 @@ main .conexa-home {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    font-family: var(--Poppins);
     padding: 10px;
 }
 
@@ -70,10 +73,23 @@ main .conexa-servicos {
     align-items: center;
     gap: 10px;
     flex-wrap: wrap;
+    padding-bottom: 10px;
+}
+
+main .conexa-servicos h1{
+    font-size: 1.5rem;
+    margin: 5px;
+}
+
+main .conexa-servicos p{
+    font-size: 1rem;
+    margin: 5px;
+    text-align: center;
 }
 
 main .conexa-servicos img {
     max-width: 220px;
+
 }
 
 main .conexa-servicos .servico {
@@ -82,11 +98,11 @@ main .conexa-servicos .servico {
     align-items: center;
     justify-content: center;
     flex: 1 1;
-    background-color: lightblue;
-
+    max-width: 300px;
     padding: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 10px;
 }
-
 
 @media screen and (max-width: 712px) {
     main .conexa-home {

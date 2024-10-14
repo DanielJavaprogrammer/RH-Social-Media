@@ -33,16 +33,15 @@ main {
     gap: 15px;
     max-width: 70%;
     margin: 20px auto;
-
     background-color: var(--Branco);
     padding: 10px;
     border-radius: 10px;
-
     height: auto;
 }
 
 main div.beneficio {
     min-width: 350px;
+    max-width: 400px;
     height: 350px;
     flex: 1 1;
     text-align: center;
