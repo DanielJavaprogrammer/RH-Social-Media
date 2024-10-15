@@ -1,13 +1,7 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 :root {
     /* Cores Primarias */
     --Vermelho-cereja: #C21233;
-    --Branco: #fff;
+    --Branco: #ffffff;
     --Red-off-white: #F1F5F2;
     --Grafite: #25282A;
     --Cinza-off-white: rgb(232, 232, 232);
@@ -20,13 +14,7 @@
     --Open-Sans: 'Open Sans', san-serif;
 }
 
-body {
-    width: 100%;
-    height: 100%;
-
-}
-
-main {
+main .unidades-RedHouse {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -39,57 +27,31 @@ main {
     height: auto;
 }
 
-main div.beneficio {
-    flex: 1 1 calc(50% - 15px);
+main .unidades-RedHouse a {
+    flex: 1 1 calc(20% - 15px);
     /* Cada bloco ocupa 50% da largura, menos o gap */
-    height: 400px;
+    height: 300px;
     text-align: center;
     border: 1px solid rgb(222, 219, 219);
     border-radius: 10px;
     cursor: pointer;
 }
 
-main div.beneficio:hover {
-    box-shadow: rgba(50, 50, 93, 0.082) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.11) 0px 18px 36px -18px inset;
-}
-
-main div.caju {
-    background-image: url(../assets/fotos/caju.png);
-    background-size: cover;
-    background-position: center;
+main .unidades-RedHouse a.villa-lobos {
+    background-image: url("../assets/fotos-unidades/vila-lobos.jpg");
     background-repeat: no-repeat;
 }
 
-main div.conexa {
-    background-image: url(../assets/fotos/conexa.png);
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-main div.gym-pass {
-    background-image: url(../assets/fotos/gympass.jpg);
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-main div.convenio {
-    background-image: url(../assets/fotos/notredame.jpg);
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-}
 
 @media screen and (max-width: 900px) {
-    main div.beneficio {
+    main .unidades-RedHouse a {
         flex: 1 1 100%;
         /* Cada bloco ocupará toda a linha em telas médias */
     }
 }
 
 @media screen and (max-width: 600px) {
-    main div.beneficio {
+    main .unidades-RedHouse a {
         min-width: 200px;
         height: 200px;
         flex: 1 1 100%;

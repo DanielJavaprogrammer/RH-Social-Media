@@ -69,62 +69,113 @@
 
     <main>
         <article class="container-feed">
+            <div class="postagem">
+                <div class="postagem-usuario">
+                    <div class="postagem-usuario-avatar">
+                        <!--Imagem do usuario-->
+                        <img src="../assets/fotos/avatar.png" alt="Foto do usuário">
+                    </div>
 
-            <article class="container-feed">
-                <div class="postagem">
-                    <div class="postagem-usuario">
-                        <div class="postagem-usuario-avatar">
-                            <!--Imagem do usuario-->
-                            <img src="../assets/fotos/avatar.png" alt="Foto do usuário">
-                        </div>
+                    <div class="postagem-usuario-dados">
+                        <!--Nome e Cargo do Usuario e hora-->
+                        <p>Barbara Baborsa Monteiro</p>
+                        <span>People Design</span>
+                        <!-- Aqui abaixo sera realizado um script para adicionar o horario da postagem -->
+                        <span id="horaio" style="color: gray;">2h</span>
+                    </div>
+                </div> <!--Final da header postagem-usuario -->
 
-                        <div class="postagem-usuario-dados">
-                            <!--Nome e Cargo do Usuario e hora-->
-                            <p>Barbara Baborsa Monteiro</p>
-                            <span>People Design</span>
-                            <!-- Aqui abaixo sera realizado um script para adicionar o horario da postagem -->
-                            <span id="horaio" style="color: gray;">2h</span>
-                        </div>
-                    </div> <!--Final da header postagem-usuario -->
+                <div class="postagem-conteudo">
 
-                    <div class="postagem-conteudo">
+                    <!--Texto da Postagem-->
+                    <div class="postagem-conteudo-texto">
+                        <p>Queridos, não se esqueçam:</p>
+                        <p>As 18h teremos momento da pizza em comemoração do Dia dos Professores!</p>
+                    </div>
 
-                        <!--Texto da Postagem-->
-                        <div class="postagem-conteudo-texto">
-                            <p>Dear team members,</p>
-                            <p>We Would like to share a special message with all of you</p>
-                            <p>Click on play on the video bellow.</p>
-                            <br>
-                            <p>Happy Teacher's Day!</p>
-                        </div>
-                        <!-- 
+                    <div class="postagem-conteudo-imagem">
+
+                        <!-- Imagem da Postagem -->
+                        <img src="../assets/fotos/post3.jpg" alt="Imagem da postagem">
+                    </div>
+
+                    <!-- <div class="postagem-video">
+                        <video width="400" controls>
+                            <source src="../assets/Teachers Day Video.mp4" type="video/mp4">
+                            Seu navegador não suporta o video.
+                        </video>
+                    </div> -->
+                </div>
+
+                <!--Botao de coração para curtir publicação-->
+                <button id="postagem-curtir" onclick="curtir()" aria-label="Curtir esta publicação">
+                    <div class="curtir-texto">
+                        <p>Curtir</p>
+                    </div>
+                    <div id="curtir-coracao">
+                        <img src="../assets/icons/heart.svg" alt="curtir">
+                    </div>
+                </button>
+
+            </div> <!--Final da div Postagem-->
+        </article>
+
+        <article class="container-feed">
+            <div class="postagem">
+                <div class="postagem-usuario">
+                    <div class="postagem-usuario-avatar">
+                        <!--Imagem do usuario-->
+                        <img src="../assets/fotos/avatar.png" alt="Foto do usuário">
+                    </div>
+
+                    <div class="postagem-usuario-dados">
+                        <!--Nome e Cargo do Usuario e hora-->
+                        <p>Barbara Baborsa Monteiro</p>
+                        <span>People Design</span>
+                        <!-- Aqui abaixo sera realizado um script para adicionar o horario da postagem -->
+                        <span id="horaio" style="color: gray;">2h</span>
+                    </div>
+                </div> <!--Final da header postagem-usuario -->
+
+                <div class="postagem-conteudo">
+
+                    <!--Texto da Postagem-->
+                    <div class="postagem-conteudo-texto">
+                        <p>Dear team members,</p>
+                        <p>We Would like to share a special message with all of you</p>
+                        <p>Click on play on the video bellow.</p>
+                        <br>
+                        <p>Happy Teacher's Day!</p>
+                    </div>
+                    <!-- 
                         <div class="postagem-conteudo-imagem">
 
                             Imagem da Postagem
                             <img src="../assets/fotos/post2.png" alt="Imagem da postagem">
                         </div> -->
 
-                        <div class="postagem-video">
-                            <video width="400" controls>
-                                <source src="../assets/Teachers Day Video.mp4" type="video/mp4">
-                                Seu navegador não suporta o video.
-                            </video>
-                        </div>
+                    <div class="postagem-video">
+                        <video width="400" controls>
+                            <source src="../assets/Teachers Day Video.mp4" type="video/mp4">
+                            Seu navegador não suporta o video.
+                        </video>
                     </div>
+                </div>
 
-                    <!--Botao de coração para curtir publicação-->
-                    <button id="postagem-curtir" onclick="curtir()" aria-label="Curtir esta publicação">
-                        <div class="curtir-texto">
-                            <p>Curtir</p>
-                        </div>
-                        <div id="curtir-coracao">
-                            <img src="../assets/icons/heart.svg" alt="curtir">
-                        </div>
-                    </button>
+                <!--Botao de coração para curtir publicação-->
+                <button id="postagem-curtir" onclick="curtir()" aria-label="Curtir esta publicação">
+                    <div class="curtir-texto">
+                        <p>Curtir</p>
+                    </div>
+                    <div id="curtir-coracao">
+                        <img src="../assets/icons/heart.svg" alt="curtir">
+                    </div>
+                </button>
 
-                </div> <!--Final da div Postagem-->
-            </article>
+            </div> <!--Final da div Postagem-->
+        </article>
 
+        <article class="container-feed">
             <div class="postagem">
                 <div class="postagem-usuario">
                     <div class="postagem-usuario-avatar">
