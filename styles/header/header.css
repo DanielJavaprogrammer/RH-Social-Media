@@ -33,6 +33,7 @@ header {
     align-items: center;
     box-shadow: .5px .5px 8px gray;
     position: relative;
+    background-color: var(--Branco);
 }
 
 header .logo {
@@ -172,4 +173,3 @@ header #icone-abrir {
         width: 150px;
     }
 }
-
