@@ -112,10 +112,7 @@ main .conexa-online-info {
     flex-wrap: wrap;
     gap: 10px;
     margin: 30px 0;
-    animation: surgir .3s ease-in;
 }
-
-@
 
 main .conexa-online-info-img {
     max-width: 300px;
@@ -138,6 +135,62 @@ main .conexa-online-info-text p {
     font-weight: 500;
 }
 
+/* PASSO A PASSO COMO USAR O CONEXA */
+.instalar-titulo {
+    width: 100%;
+    background-color: var(--Azul-escuro);
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.instalar-titulo h1 {
+    text-align: center;
+    color: var(--Branco);
+}
+
+.conexa-instalar {
+    /* Container das seções */
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding: 30px;
+}
+
+.passo-a-passo-secao {
+    /* passo a passo */
+    display: flex;
+    flex: 1 1 20%;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.passo-a-passo-secao img {
+    /* imagens do passo a passo */
+    max-width: 200px;
+    ;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.passo-a-passo-secao h1 {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+}
+
+.passos-aviso {
+    margin-top: 20px;
+}
+
+/* FIM PASSO A PASSO COMO USAR O CONEXA */
+
+@media screen and (max-width: 835px) {
+    .conexa-instalar {
+        flex-direction: column;
+    }
+}
+
 @media screen and (max-width: 712px) {
     main .conexa-home {
         justify-content: space-between;
@@ -146,5 +199,18 @@ main .conexa-online-info-text p {
     main .conexa-sgv {
         min-width: 200px;
         justify-content: end;
+    }
+
+    .passo-a-passo-secao {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    div.passo-texto {
+        max-width: 80%;
+    }
+
+    .passos-aviso {
+        text-align: center;
     }
 }

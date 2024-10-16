@@ -22,4 +22,3 @@ conexa.addEventListener("click",() =>{
     location.href = "../code/beneficioConexa.html";
 })
 
-
