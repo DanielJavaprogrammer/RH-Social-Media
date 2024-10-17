@@ -42,7 +42,7 @@ main {
 main div.beneficio {
     flex: 1 1 calc(50% - 15px);
     /* Cada bloco ocupa 50% da largura, menos o gap */
-    height: 400px;
+    height: 350px;
     text-align: center;
     border: 1px solid rgb(222, 219, 219);
     border-radius: 10px;

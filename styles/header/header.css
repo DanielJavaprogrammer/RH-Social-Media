@@ -127,11 +127,13 @@ nav#mobile #mobile_menu ul {
     list-style-type: none;
     display: flex;
     flex-direction: column;
+    margin-left: -2rem;
 }
 
 nav#mobile #mobile_menu ul li {
     padding: 10px;
     box-shadow: 0px 0px .5px black;
+    margin-left: 0;
 }
 
 header #icone-abrir {
@@ -150,6 +152,8 @@ header #icone-abrir {
     nav#desktop {
         display: none;
     }
+
+
 
     header #sair-btn {
         display: none;
