@@ -14,47 +14,123 @@
     --Open-Sans: 'Open Sans', san-serif;
 }
 
+header{
+    z-index: 99;
+}
 main .unidades-RedHouse {
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
+    flex-direction: column;
     gap: 15px;
+    height: auto;
     max-width: 70%;
     margin: 20px auto;
     background-color: var(--Branco);
     padding: 10px;
     border-radius: 10px;
-    height: auto;
+    font-family: var(--Poppins);
 }
 
-main .unidades-RedHouse a {
-    flex: 1 1 calc(20% - 15px);
-    /* Cada bloco ocupa 50% da largura, menos o gap */
-    height: 300px;
-    text-align: center;
-    border: 1px solid rgb(222, 219, 219);
-    border-radius: 10px;
-    cursor: pointer;
+article.unidades-RedHouse{
+    padding: 0;
+    border-radius: 20px;
 }
 
-main .unidades-RedHouse a.villa-lobos {
-    background-image: url("../assets/fotos-unidades/vila-lobos.jpg");
+main .unidades-RedHouse a{
+    display: flex;
+    height: 400px;
+    width: 100%;
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white; 
+    font-size: 24px; 
+    font-weight: bold; 
+    position: relative;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
 }
 
+main .unidades-RedHouse a::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1; /* Para garantir que a sobreposição fique atrás do texto */
+    border-radius: 10px;
+}
 
-@media screen and (max-width: 900px) {
-    main .unidades-RedHouse a {
-        flex: 1 1 100%;
-        /* Cada bloco ocupará toda a linha em telas médias */
+main .unidades-RedHouse a span {
+    z-index: 2; 
+    font-size: 2em;
+    text-align: center;
+}
+
+/* DEFINDO TAMANHA DE FONTE E ALTURA DAS OPÇÕES EM TELAS MENORES */
+@media screen and (max-width: 1267px) {
+    main .unidades-RedHouse a span {
+        font-size: 1.5em;
+    }
+
+    main .unidades-RedHouse a{
+        height: 300px;
     }
 }
 
-@media screen and (max-width: 600px) {
-    main .unidades-RedHouse a {
-        min-width: 200px;
-        height: 200px;
-        flex: 1 1 100%;
-        /* O mesmo ajuste para telas menores */
+@media screen and (max-width: 941px) {
+    main .unidades-RedHouse a span {
+        font-size: .8em;
+    }
+    main .unidades-RedHouse a{
+        height: 250px;
     }
 }
+/* FIM DEFINDO TAMANHA DE FONTE E ALTURA DAS OPÇÕES EM TELAS MENORES */
+
+
+
+/* DEFININDO BACKGROUNDS PARA CADA OPÇÃO DE REDHOUSE */
+main .unidades-RedHouse .villa-lobos{
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%), 
+    url(../assets/fotos-unidades/vila-lobos.jpg);
+
+}
+
+main .unidades-RedHouse .higienopolis{
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%),
+    url(../assets/fotos-unidades/higi.jpg);
+}
+
+main .unidades-RedHouse .pacaembu{
+    background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%),
+     url(../assets/fotos-unidades/pacaembu.jpg);
+
+}
+
+main .unidades-RedHouse .santana{
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%),
+    url(../assets/fotos-unidades/santana.jpg);
+    
+}
+
+main .unidades-RedHouse .perdizes{
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%),
+    url(../assets/fotos-unidades/perdizes.jpg);
+
+}
+/* FIM DEFININDO BACKGROUNDS PARA CADA OPÇÃO DE REDHOUSE */
+
+
+/* COMEÇO MIDIA PARA DEFINIR LARGURAS DO "A" EM 90% EM TELAS MOBILE*/
+@media screen and (max-width: 680px ){
+    main .unidades-RedHouse{
+        min-width: 90%;
+    }
+}
+/* FIM MIDIA PARA DEFINIR LARGURAS DO "A" EM 90% EM TELAS MOBILE*/
+
