@@ -17,8 +17,11 @@ document.querySelector(".caju").addEventListener("click", function () {
 })
 
 const conexa = document.querySelector(".conexa");
-
-conexa.addEventListener("click",() =>{
+conexa.addEventListener("click", () => {
     location.href = "../code/beneficioConexa.html";
 })
 
+const convenio = document.querySelector('.convenio');
+convenio.addEventListener("click", () => {
+    location.href = "../code/beneficioConvenio.html"
+})
