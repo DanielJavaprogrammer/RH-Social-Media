@@ -115,11 +115,46 @@ main .convenio-img img {
 
 /* FIM ESTILOS ARTICLE CONVENIO-HEADER */
 
+main .convenio-info {
+    margin: 20px auto;
+    max-width: 1000px;
+}
+
 main .convenio-servicos {
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    gap: 10px;
+    align-items: stretch;
+    /* Garantir que todas as caixas tenham a mesma altura */
     flex-wrap: wrap;
+    gap: 20px;
     padding-bottom: 10px;
+}
+
+main .convenio-servicos .servico {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    /* Alinhar o conteúdo no topo */
+    flex-basis: calc(33.33% - 20px);
+    /* Assegura 3 colunas iguais */
+    padding: 10px;
+    box-sizing: border-box;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    
+}
+
+main .convenio-servicos .servico img {
+    max-width: 200px;
+    height: auto;
+}
+
+main .convenio-servicos .servico h1 {
+    font-size: 1.5em;
+    margin-top: 15px;
+    text-align: center;
+}
+
+main .convenio-servicos .servico p {
+    text-align: center;
 }
