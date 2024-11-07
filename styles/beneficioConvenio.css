@@ -141,7 +141,7 @@ main .convenio-servicos .servico {
     padding: 10px;
     box-sizing: border-box;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    
+
 }
 
 main .convenio-servicos .servico img {
@@ -158,3 +158,116 @@ main .convenio-servicos .servico h1 {
 main .convenio-servicos .servico p {
     text-align: center;
 }
+
+/* INICIO ARTICLE CONVENIO ONLINE INFO */
+
+main .convenio-online-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px auto;
+    max-width: 1000px;
+    background-color: var(--Branco);
+}
+
+main .convenio-online-info-img {
+    max-width: 300px;
+}
+
+main .convenio-online-info-img img {
+    max-width: 100%;
+}
+
+main .convenio-online-info-text {
+    max-width: 300px;
+    text-align: center;
+}
+
+main .convenio-online-info-text h1 {
+    color: var(--Azul-escuro);
+}
+
+main .convenio-online-info-text p {
+    font-weight: 500;
+}
+
+/* FIM ARTICLE CONVENIO ONLINE INFO */
+
+/* INICIO COMOM BAIXAR O APP */
+
+.convenio-como-baixar {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: var(--Branco);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.como-baixar-links a {
+    color: var(--Dourado);
+    font-weight: 600;
+}
+
+.como-baixar-links h1 {
+    font-size: 1.5rem;
+}
+
+.como-baixar-links h3 {
+    font-size: 1rem;
+}
+
+.como-baixar-passos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 0 auto;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.como-baixar-passos h1 {
+    flex-basis: 100%;
+    text-align: center;
+}
+
+.passosBox {
+    max-width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    gap: 10px;
+    text-align: center;
+    flex: 1 1 45%;
+    flex-wrap: wrap;
+}
+
+.como-baixar-passos img {
+    width: 250px;
+}
+
+.passos-aviso {
+    padding: 10px;
+}
+
+@media screen and (max-width: 680px) {
+    .como-baixar-passos {
+        flex-direction: column;
+        max-width: 100%;
+        align-items: center;
+    }
+
+    .passosBox img {
+        width: 100%;
+    }
+
+    .passosBox {
+        min-width: 90%;
+    }
+}
+
+/* FIM COMOM BAIXAR O APP */
