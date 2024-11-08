@@ -26,7 +26,7 @@
 body {
     width: 100%;
     height: 100%;
-    font-family: var(--Open-Sans);
+    font-family: var(--Poppins);
 }
 
 body::-webkit-scrollbar {
@@ -35,179 +35,129 @@ body::-webkit-scrollbar {
 }
 
 main {
+    background-color: var(--Cinza-off-white);
     width: 100%;
-    height: 100%;
-}
-
-main .container {
-    max-width: 1000px;
-    min-height: 100%;
-    margin: 20px auto;
-    background-color: var(--Branco);
-    padding: 0;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    height: auto;
 }
 
 main .caju-home {
     background-color: var(--Vermelho-cereja);
-    min-height: 50vh;
-    border-radius: 20px;
-    padding: 10px 15px;
-
     display: flex;
     align-items: center;
-    justify-content: space-around;
-
-}
-
-main .caju-texto {
-    max-width: 400px;
+    justify-content: center;
     color: var(--Branco);
+    padding: 20px;
 }
 
-main .caju-texto h2 {
-    font-size: 2em;
-    margin-bottom: 1em;
-    margin-top: 1em;
-    /* font-family: "Londrina Sketch", sans-serif; */
+main .caju-imagem {
+    max-width: 350px;
 }
 
 main .caju-imagem img {
-    max-width: 300px;
+    width: 100%;
 }
 
 main .caju-informacao {
-    width: 100%;
-    margin-top: 20px;
+    max-width: 1000px;
+    margin: auto;
+    background-color: var(--Branco);
+    padding: 10px;
 }
 
+/* CONFIGURANDO OS CARDS */
 main .caju-info-dados h2 {
+    margin: 20px auto 30px auto;
     text-align: center;
-    margin: 40px;
-    text-transform: uppercase;
 }
 
 main .info-lista {
     display: flex;
-    justify-content: space-around;
-    width: 100%;
-    gap: 10px;
+    justify-content: center;
+    gap: 20px;
     flex-wrap: wrap;
+    align-items: stretch;
 }
 
 main .cartao-info {
-    width: 200px;
-    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
-    flex: 1;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    flex: 1 1;
+    min-height: 200px;
 }
 
 main .cartao-info-destaque {
-    background-color: var(--Dourado);
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 60px 0;
+    background-color: var(--Azul-escuro);
+    color: var(--Branco);
+    text-align: center;
+    padding: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 main .cartao-info-texto {
-    padding: 5px;
+    margin-top: 20px;
+    padding: 0 10px;
 }
 
-main .cartao-info-destaque p {
-    margin: 0;
+/* FIM CONFIGURANDO OS CARDS */
+
+
+/* COMEÇO COMO BAIXAR E UTILIZAR O CAJU */
+.como-baixar-links h1 {
+    font-size: 1.5rem;
 }
 
-/* Seção de como baixar o Caju */
-main .caju-download {
-    padding: 20px;
-    background-color: var(--vermelho-caju);
-
+.como-baixar-links h3 {
+    font-size: 1rem;
 }
 
-main .download-texto h1 {
-    text-align: center;
-    margin: 10px 40px 40px 40px;
-    color: var(--Branco);
+.como-baixar-links a {
+    color: var(--Dourado);
     font-weight: 600;
 }
 
-main .caju-passoApasso-download {
+/* CONTAINER */
+main .caju-download {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     gap: 20px;
-    justify-content: space-between;
+    flex-wrap: wrap;
     max-width: 1000px;
     margin: 0 auto;
+    background-color: var(--Branco);
+    padding: 10px;
 }
 
-main .passo {
-    flex: 1 1 30%;
-    min-width: 250px;
-    background-color: white;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-main .download-passos-img {
+/* CONTAINER DOS CARTS DE PASSO A PASSO */
+.caju-passo-a-passo {
+    width: 100%;
+    height: auto;
     display: flex;
     align-items: center;
-    justify-content: center;
+    margin-top: 30px;
+    justify-content: space-evenly;
+    gap: 10px;
+    margin-bottom: 30px;
 }
 
-main .download-passos-img img {
-    margin-bottom: 10px;
+.caju-passo-a-passo img {
+    max-width: 250px;
+    border-radius: 8px;
+    display: block;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 
-main .download-passos-img p {
-    text-transform: uppercase;
+.caju-passo-a-passo p {
+    max-width: 500px;
+    font-size: 1.5em;
 }
 
-main .download-passo1-texto p {
-    margin-top: 10px;
-    font-weight: 600;
-}
+/* FIM COMEÇO COMO BAIXAR E UTILIZAR O CAJU */
 
-/* Media Query da seção container- caju texto e caju imagem. */
-@media screen and (max-width: 580px) {
-    main .caju-home {
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
-
-    main .caju-imagem {
-        margin-top: 30px;
-    }
-
-}
-
-/* Media Query da seção de cartão beneficios caju */
-@media screen and (max-width: 665px) {
+@media screen and (max-width: 700px) {
     main .info-lista {
         flex-direction: column;
-        align-items: center;
-        gap: 50px;
-    }
-
-    main .cartao-info {
-        min-width: 350px;
-    }
-}
-
-@media (max-width: 768px) {
-    .passo {
-        flex: 1 1 45%;
-        /* Em telas menores, ajusta para 2 colunas */
-    }
-}
-
-@media (max-width: 500px) {
-    .passo {
-        flex: 1 1 100%;
-        /* Em telas bem pequenas, cada passo ocupa a largura total */
     }
 }
