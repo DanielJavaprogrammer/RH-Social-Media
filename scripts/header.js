@@ -30,3 +30,4 @@ const wellhub = document.querySelector(".gym-pass");
 wellhub.addEventListener("click", () => {
     location.href = "../code/beneficioGymPass.html";
 });
+

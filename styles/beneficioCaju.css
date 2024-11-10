@@ -154,10 +154,46 @@ main .caju-download {
     font-size: 1.5em;
 }
 
+.passo-2 img{
+    order: 2;
+}
+
 /* FIM COMEÇO COMO BAIXAR E UTILIZAR O CAJU */
 
 @media screen and (max-width: 700px) {
     main .info-lista {
         flex-direction: column;
+        width:400px;
+        
+    }
+
+    .caju-info-dados{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .caju-passo-a-passo{
+        flex-direction: column;
+    }
+
+    .caju-passo-a-passo p{
+        font-size: 1rem;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .caju-download h1{
+        font-size: 1.3rem;
+    }
+
+    main .info-lista{
+        width: 100%;
+    }
+
+    .passo-2 p{
+        order: 2;
     }
 }
