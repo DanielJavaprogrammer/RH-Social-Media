@@ -269,6 +269,10 @@ main .convenio-online-info-text p {
     .passosBox {
         min-width: 90%;
     }
+
+    main .convenio-servicos .servico{
+        flex-basis: 90%;
+    }
 }
 
 /* FIM COMOM BAIXAR O APP */
