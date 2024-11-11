@@ -1,0 +1,32 @@
+:root {
+    /* Cores Primarias */
+    --Vermelho-cereja: #C21233;
+    --Branco: #ffffff;
+    --Red-off-white: #F1F5F2;
+    --Grafite: #25282A;
+    --Cinza-off-white: rgb(232, 232, 232);
+    --Azul-escuro: #14325A;
+    --Preto: #000000;
+    --Dourado: #C5A469;
+    --Rosa-wellHub: #D8385E;
+
+    /* Principais fontes */
+    --Poppins: 'Poppins', san-serif;
+    --Open-Sans: 'Open Sans', san-serif;
+}
+
+main {
+    background-color: var(--Branco);
+    width: 100%;
+    height: auto;
+}
+
+main article .wellhub-header{
+    background-color: var(--Rosa-wellHub);
+    max-width: 100%;
+    height: auto;
+    background-image: url(../assets/img-wellhub/capa_wellhub.jpg);
+    background-size: cover;
+    background-position: center top;
+    height: 300px;
+}
