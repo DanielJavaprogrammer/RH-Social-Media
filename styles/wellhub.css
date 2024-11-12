@@ -16,17 +16,156 @@
 }
 
 main {
-    background-color: var(--Branco);
+    background-color: var(--Red-off-white);
     width: 100%;
     height: auto;
+    font-family: var(--Poppins);
 }
 
-main article .wellhub-header{
-    background-color: var(--Rosa-wellHub);
+/* INICIO HEADER BANER WELLHUB */
+main article .wellhub-header {
     max-width: 100%;
     height: auto;
-    background-image: url(../assets/img-wellhub/capa_wellhub.jpg);
+    background: url(../assets/img-wellhub/capa-wellhub.jpg);
     background-size: cover;
-    background-position: center top;
-    height: 300px;
+    background-position: center center;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--Branco);
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+}
+
+main article .wellhub-header h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+main article .wellhub-header h2 {
+    background-color: var(--Azul-escuro);
+    padding: 15px;
+    border-radius: 30px;
+    font-size: 1.3em;
+}
+
+/* FIM HEADER BANER WELLHUB */
+
+/* INICIO wellhub-beneficios BANER WELLHUB */
+.wellhub-beneficios {
+    background-color: var(--Branco);
+    max-width: 1000px;
+    display: flex;
+    margin: auto;
+    padding: 20px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.beneficio {
+    flex: 1 1;
+    max-width: 300px;
+    align-items: stretch;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.beneficio img {
+    width: 100%;
+}
+
+.beneficio p {
+    margin-top: 20px;
+}
+
+/* FIM wellhub-beneficios BANER WELLHUB */
+
+/* INICIO wellhub-WHAT BANER WELLHUB */
+.wellhub-what {
+    max-width: 1000px;
+    height: auto;
+    margin: auto;
+    background-color: #fff;
+}
+
+.wellhub-what .what-text {
+    text-align: center;
+    width: 100%;
+    padding: 0 30px;
+}
+
+.what-text h1 {
+    color: var(--Grafite);
+    padding-top: 30px;
+}
+
+.what-text h3 {
+    color: var(--Grafite);
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.como-baixar-wellhub {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-top: 30px;
+    gap: 20px;
+}
+
+.wellhub-what img {
+    width: 250px;
+    border-radius: 20px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+.passos {
+    flex: 1 1 40%;
+    max-width: 50%;
+    padding: 30px;
+}
+
+.passos p {
+    margin-top: 30px;
+}
+
+.avisos {
+    background-color: #fff;
+    text-align: start;
+    padding: 30px 30px;
+}
+
+/* FIM wellhub-WHAT BANER WELLHUB */
+
+@media screen and (max-width: 1000px) {
+    main article .wellhub-header h1 {
+        font-size: 2.5rem;
+        font-weight: 600;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .wellhub-beneficios {
+        flex-direction: column;
+        align-content: center;
+    }
+
+
+    .como-baixar-wellhub {
+        justify-content: center;
+    }
+
+    .como-baixar-wellhub .passos {
+        max-width: 100%;
+        flex-basis: 100%;
+    }
+
+    .avisos {
+        padding: 20px;
+        margin-top: -20px;
+    }
 }
