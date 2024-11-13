@@ -31,3 +31,9 @@ wellhub.addEventListener("click", () => {
     location.href = "../code/beneficioGymPass.html";
 });
 
+
+//MODAL HERE
+document.getElementById("sair-btn").addEventListener("click", function(){
+    alert("hi");
+})
+
