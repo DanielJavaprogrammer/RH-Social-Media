@@ -15,7 +15,7 @@ document.querySelector("#icone-abrir").addEventListener("click", function () {
 const images = document.querySelectorAll("img");
 const modal = document.getElementById("modal");
 const modalImage = document.getElementById("modalImage");
-const closeModal = document.getElementById("close");
+const fecharModal = document.getElementById("fechar");
 
 // Adiciona o evento de clique em cada imagem
 images.forEach(img => {
@@ -26,7 +26,7 @@ images.forEach(img => {
 });
 
 // Fecha o modal ao clicar no "x"
-closeModal.addEventListener("click", () => {
+fecharModal.addEventListener("click", () => {
     modal.style.display = "none";
 });
 
