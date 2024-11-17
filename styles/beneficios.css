@@ -23,7 +23,6 @@
 body {
     width: 100%;
     height: 100%;
-
 }
 
 main {
@@ -39,66 +38,66 @@ main {
     height: auto;
 }
 
-main div.beneficio {
-    flex: 1 1 calc(50% - 15px);
-    /* Cada bloco ocupa 50% da largura, menos o gap */
+/* Estilizando o link <a> para que ele funcione como um bloco */
+main a {
+    flex: 1 1 calc(50% - 15px); /* Mesma regra de flexbox dos divs */
+    text-decoration: none; /* Remove o sublinhado padrão do link */
+    display: block; /* Faz o <a> ocupar o espaço do div */
+    border-radius: 10px; /* Para aplicar o hover corretamente */
+}
+
+/* Mantendo o estilo dos blocos dentro do link */
+main a .beneficio {
     height: 350px;
     text-align: center;
     border: 1px solid rgb(222, 219, 219);
     border-radius: 10px;
     cursor: pointer;
-}
-
-main div.beneficio:hover {
-    box-shadow: rgba(50, 50, 93, 0.082) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.11) 0px 18px 36px -18px inset;
-}
-
-main div.caju {
-    background-image: url(../assets/fotos/caju.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-main div.conexa {
+/* Efeito de hover aplicado ao <a> */
+main a:hover .beneficio {
+    box-shadow: rgba(50, 50, 93, 0.082) 0px 30px 60px -12px inset,
+                rgba(0, 0, 0, 0.11) 0px 18px 36px -18px inset;
+}
+
+/* Estilo específico para cada benefício */
+main a .caju {
+    background-image: url(../assets/fotos/caju.png);
+}
+
+main a .conexa {
     background-image: url(../assets/fotos/conexa.png);
     background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
-main div.gym-pass {
+main a .gym-pass {
     background-image: url(../assets/fotos/gympass.jpg);
     background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
-main div.convenio {
+main a .convenio {
     background-image: url(../assets/fotos/notredame.jpg);
     background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
+/* Responsividade para telas médias */
 @media screen and (max-width: 900px) {
-    main div.beneficio {
+    main a {
         flex: 1 1 100%;
-        /* Cada bloco ocupará toda a linha em telas médias */
     }
 }
 
+/* Responsividade para telas pequenas */
 @media screen and (max-width: 600px) {
-    main div.beneficio {
+    main a {
         min-width: 100%;
-        height: 300px;
-        flex: 1 1 100%;
-
-        /* O mesmo ajuste para telas menores */
     }
 
     main {
         max-width: 100%;
     }
-
 }

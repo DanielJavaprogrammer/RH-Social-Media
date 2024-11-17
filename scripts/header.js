@@ -12,7 +12,7 @@ document.querySelector("#icone-abrir").addEventListener("click", function () {
 });
 
 // Seleciona as imagens e o modal
-const images = document.querySelectorAll("img");
+const images = document.querySelectorAll("main img");
 const modal = document.getElementById("modal");
 const modalImage = document.getElementById("modalImage");
 const fecharModal = document.getElementById("fechar");
@@ -37,24 +37,13 @@ modal.addEventListener("click", (e) => {
     }
 });
 
-// Script para abrir a janela do Caju
-document.querySelector(".caju").addEventListener("click", function () {
-    location.href = "../code/beneficioCaju.html";
+//Botao de like
+const button = document.querySelector('#like');
+const number = document.querySelector('#number');
+
+button.addEventListener('click', () => {
+  let likeValue = document.querySelector('#number').textContent;
+  let newValue = Number(likeValue) + 1;
+  button.classList.add('like');
+  number.innerHTML = newValue;
 });
-
-const conexa = document.querySelector(".conexa");
-conexa.addEventListener("click", () => {
-    location.href = "../code/beneficioConexa.html";
-});
-
-const convenio = document.querySelector('.convenio');
-convenio.addEventListener("click", () => {
-    location.href = "../code/beneficioConvenio.html";
-});
-
-const wellhub = document.querySelector(".gym-pass");
-wellhub.addEventListener("click", () => {
-    location.href = "../code/beneficioGymPass.html";
-});
-
-
