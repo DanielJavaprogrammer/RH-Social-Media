@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 :root {
     /* Cores Primarias */
     --Vermelho-cereja: #C21233;

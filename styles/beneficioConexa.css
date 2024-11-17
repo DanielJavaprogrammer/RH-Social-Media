@@ -20,10 +20,6 @@
     --Open-Sans: 'Open Sans', san-serif;
 }
 
-body {
-    font-family: var(--Poppins);
-}
-
 main .conexa-home {
     width: 100%;
     background-color: #1B0C84;
